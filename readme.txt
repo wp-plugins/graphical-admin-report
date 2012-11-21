@@ -5,8 +5,8 @@ Author URI: http://www.gopiplus.com/work/2010/07/18/graphical-admin-report/
 Plugin URI: http://www.gopiplus.com/work/2010/07/18/graphical-admin-report/
 Tags: graphical, statistics, report, graph
 Requires at least: 3.0
-Tested up to: 3.4.1
-Stable tag: 7.0
+Tested up to: 3.5
+Stable tag: 7.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	
@@ -79,49 +79,55 @@ No, this plugin only for admin report.
 
 == Upgrade Notice == 
 
+= 7.1 =
+Tested up to 3.5
+
 = 7.0 =
-New demo link, www.gopiplus.com
+New demo link, http://www.gopiplus.com
 
 = 6.0 =
-Tested upto 3.4.1
+Tested up to 3.4.1
 GPLv2 license text added
 
 = 5.0 =
-Tested upto 3.4
+Tested up to 3.4
 
 = 4.0 =
-Tested upto 3.3
+Tested up to 3.3
 
 = 3.0 =
-Tested upto 3.2.1
+Tested up to 3.2.1
 
 = 2.0 =		
-Tested upto 3.0.
+Tested up to 3.0.
 
 = 1.0 =		
 First version.
 
 == Changelog ==
 
+= 7.1 =
+Tested up to 3.5
+
 = 7.0 =
-New demo link, www.gopiplus.com
+New demo link, http://www.gopiplus.com
 
 = 6.0 =
-Tested upto 3.4.1
+Tested up to 3.4.1
 GPLv2 license text added
 
 = 5.0 =
-Tested upto 3.4
+Tested up to 3.4
 
 = 4.0 =
-Tested upto 3.3
+Tested up to 3.3
 
 = 3.0 =
-Tested upto 3.2.1
+Tested up to 3.2.1
 
 = 2.0 =
 
-Tested upto 3.0.
+Tested up to 3.0.
 
 = 1.0 =
 	
