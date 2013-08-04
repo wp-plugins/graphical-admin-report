@@ -4,7 +4,7 @@
 Plugin Name: Graphical admin report
 Plugin URI: http://www.gopiplus.com/work/2010/07/18/graphical-admin-report/
 Description: This plug-in will display the graphical report for admin about post count, user registration, comments posted activity.
-Version: 8.0
+Version: 8.1
 Author: Gopi.R
 Author URI: http://www.gopiplus.com/work/2010/07/18/graphical-admin-report/
 Donate link: http://www.gopiplus.com/work/2011/05/08/wordpress-plugin-image-horizontal-reel-scroll-slideshow/
@@ -45,12 +45,12 @@ function getFCColor()
 
 function Greport_deactivate() 
 {
-
+	// No action required.
 }
 
 function Greport_activation() 
 {
-
+	// No action required.
 }
 
 function Greport_admin_options() 
@@ -62,17 +62,17 @@ function Greport_admin_options()
 	$pluginurl = "/wp-content/plugins/graphical-admin-report";
 	$fullpluginurl = $siteurl.$pluginurl;
 	
-	$mainurl = $siteurl."/wp-admin/options-general.php?page=graphical-admin-report/graphical-admin-report.php";
+	$mainurl = $siteurl."/wp-admin/options-general.php?page=graphical-admin-report";
 	
 	?>
 <SCRIPT LANGUAGE="Javascript" SRC="<?php echo $fullpluginurl; ?>/FusionCharts.js"></SCRIPT>
 <?php
 	include("graphical-admin-chart.php");
 	?>
-
-<div class="wrap">
-  <h2>Graphical Report</h2>
-</div>
+	<div class="wrap">
+	  <div class="form-wrap">
+		<div id="icon-edit" class="icon32 icon32-posts-post"><br></div>
+		<h2>Graphical Report</h2>
 <?php
 	$f_month = @$_POST['f_month'];
 	$f_day	= @$_POST['f_day'];
@@ -84,12 +84,15 @@ function Greport_admin_options()
 	$record_type = @$_POST['record_type'];
 	?>
 <form name="greportfrm" id="greportfrm" method="post" action="<?php echo $mainurl; ?>">
-  <table width="100%" border="0" cellspacing="0" cellpadding="2">
+  <table border="0" cellspacing="0" cellpadding="5">
     <tr>
-      <td width="452">Choose date range</td>
-      <td width="111">Choose  type</td>
-      <td width="156">Choose graph type</td>
-      <td width="65">&nbsp;</td>
+      <td><strong>Choose date range</strong></td>
+	  <td></td>
+      <td><strong>Choose type</strong></td>
+	  <td></td>
+      <td><strong>Choose graph type</strong></td>
+	  <td></td>
+      <td>&nbsp;</td>
     </tr>
     <tr>
       <td><select name="f_month" id="f_month">
@@ -170,17 +173,20 @@ function Greport_admin_options()
         ?>
         </select>
       </td>
+	  <td></td>
       <td><select name="report_type" id="report_type">
           <option <?php if($report_type=="Month") { echo "selected=''"; } ?> value="Month">Month</option>
           <option <?php if($report_type=="Day") { echo "selected=''"; } ?> value="Day">Day</option>
         </select></td>
-      <td><select name="record_type" id="report_type">
+      <td></td>
+	  <td><select name="record_type" id="report_type">
           <option <?php if($record_type=="Posts report graph") { echo "selected=''"; } ?> value="Posts report graph">Posts report</option>
           <option <?php if($record_type=="User registration graph") { echo "selected=''"; } ?> value="User registration graph">User registration</option>
           <option <?php if($record_type=="Comments report graph") { echo "selected=''"; } ?> value="Comments report graph">Comments report</option>
         </select>
       </td>
-      <td><input name="Greport_search" class="button-primary" id="Greport_search" type="submit" value="Submit" /></td>
+	  <td></td>
+      <td><input name="Greport_search" class="button" id="Greport_search" type="submit" value="Submit" /></td>
     </tr>
   </table>
 </form>
@@ -217,9 +223,9 @@ function Greport_admin_options()
 	{
 		$Choosen_date_range = "Not selected (or) Not selected properly";
 	}
-	echo "<i><br>Choosen date range   : " . $Choosen_date_range;
-	echo "<br>Choosen type   : " . $report_type ;
-	echo "<br>Choosen graph type   : " . $record_type ;
+	echo "<i><br><strong>Choosen date range: </strong>" . $Choosen_date_range;
+	echo "<br><strong>Choosen type: </strong>" . $report_type ;
+	echo "<br><strong>Choosen graph type: </strong>" . $record_type ;
 	echo "<br><br></i>";
 	$sSql =	"SELECT";
 	if($report_type == "Day") {
@@ -291,7 +297,9 @@ function Greport_admin_options()
 
 	//----------------------------------------------------------------------------------------------------------
 	?>
-	Check official website for live demo and more information <a target="_blank" href='http://www.gopiplus.com/work/2010/07/18/graphical-admin-report/'>Click here</a><br>
+	</div>
+	<p class="description">Check official website for more information <a target="_blank" href="http://www.gopiplus.com/work/2010/07/18/graphical-admin-report/">Click here</a></p>
+	</div>
 <?php	
 }
 
@@ -299,7 +307,7 @@ function Greport_add_to_menu()
 {
 	if (is_admin()) 
 	{
-		add_options_page('Graphical Report', 'Graphical Report', 'manage_options', __FILE__, 'Greport_admin_options' );
+		add_options_page('Graphical Report', 'Graphical Report', 'manage_options', 'graphical-admin-report', 'Greport_admin_options' );
 	}
 }
 
