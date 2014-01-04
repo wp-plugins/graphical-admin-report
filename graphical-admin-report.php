@@ -1,10 +1,9 @@
 <?php
-
 /*
 Plugin Name: Graphical admin report
 Plugin URI: http://www.gopiplus.com/work/2010/07/18/graphical-admin-report/
 Description: This plug-in will display the graphical report for admin about post count, user registration, comments posted activity.
-Version: 8.1
+Version: 8.2
 Author: Gopi.R
 Author URI: http://www.gopiplus.com/work/2010/07/18/graphical-admin-report/
 Donate link: http://www.gopiplus.com/work/2011/05/08/wordpress-plugin-image-horizontal-reel-scroll-slideshow/
@@ -72,7 +71,7 @@ function Greport_admin_options()
 	<div class="wrap">
 	  <div class="form-wrap">
 		<div id="icon-edit" class="icon32 icon32-posts-post"><br></div>
-		<h2>Graphical Report</h2>
+		<h2><?php _e('Graphical Report', 'graphical-admin-report'); ?></h2>
 <?php
 	$f_month = @$_POST['f_month'];
 	$f_day	= @$_POST['f_day'];
@@ -86,17 +85,17 @@ function Greport_admin_options()
 <form name="greportfrm" id="greportfrm" method="post" action="<?php echo $mainurl; ?>">
   <table border="0" cellspacing="0" cellpadding="5">
     <tr>
-      <td><strong>Choose date range</strong></td>
+      <td><strong><?php _e('Choose date range', 'graphical-admin-report'); ?></strong></td>
 	  <td></td>
-      <td><strong>Choose type</strong></td>
+      <td><strong><?php _e('Choose type', 'graphical-admin-report'); ?></strong></td>
 	  <td></td>
-      <td><strong>Choose graph type</strong></td>
+      <td><strong><?php _e('Choose graph type', 'graphical-admin-report'); ?></strong></td>
 	  <td></td>
       <td>&nbsp;</td>
     </tr>
     <tr>
       <td><select name="f_month" id="f_month">
-          <option value="">Month</option>
+          <option value=""><?php _e('Month', 'graphical-admin-report'); ?></option>
           <option <?php if($f_month=="1") { echo "selected=''"; } ?> value="1">Jan</option>
           <option <?php if($f_month=="2") { echo "selected=''"; } ?> value="2">Feb</option>
           <option <?php if($f_month=="3") { echo "selected=''"; } ?>  value="3">Mar</option>
@@ -111,7 +110,7 @@ function Greport_admin_options()
           <option <?php if($f_month=="12") { echo "selected=''"; } ?> value="12">Dec</option>
         </select>
         <select name="f_day" id="f_day">
-          <option value="" >Day</option>
+          <option value="" ><?php _e('Day', 'graphical-admin-report'); ?></option>
           <?php
 		  
         for($i=1;$i<=31;$i++)
@@ -124,7 +123,7 @@ function Greport_admin_options()
         ?>
         </select>
         <select name="f_year" id="f_year">
-          <option value="" >Year</option>
+          <option value="" ><?php _e('Year', 'graphical-admin-report'); ?></option>
           <?php
         for($i=2005;$i<=2015;$i++)
         {
@@ -136,7 +135,7 @@ function Greport_admin_options()
         </select>
         -
         <select name="t_month" id="t_month">
-          <option value="">Month</option>
+          <option value=""><?php _e('Month', 'graphical-admin-report'); ?></option>
           <option <?php if($t_month=="1") { echo "selected=''"; } ?> value="1">Jan</option>
           <option <?php if($t_month=="2") { echo "selected=''"; } ?> value="2">Feb</option>
           <option <?php if($t_month=="3") { echo "selected=''"; } ?> value="3">Mar</option>
@@ -151,7 +150,7 @@ function Greport_admin_options()
           <option <?php if($t_month=="12") { echo "selected=''"; } ?> value="12">Dec</option>
         </select>
         <select name="t_day" id="t_day">
-          <option value="" >Day</option>
+          <option value="" ><?php _e('Day', 'graphical-admin-report'); ?></option>
           <?php
         for($i=1;$i<=31;$i++)
         {
@@ -162,7 +161,7 @@ function Greport_admin_options()
         ?>
         </select>
         <select name="t_year" id="t_year">
-          <option value="" >Year</option>
+          <option value="" ><?php _e('Year', 'graphical-admin-report'); ?></option>
           <?php
         for($i=2005;$i<=2015;$i++)
         {
@@ -175,14 +174,14 @@ function Greport_admin_options()
       </td>
 	  <td></td>
       <td><select name="report_type" id="report_type">
-          <option <?php if($report_type=="Month") { echo "selected=''"; } ?> value="Month">Month</option>
-          <option <?php if($report_type=="Day") { echo "selected=''"; } ?> value="Day">Day</option>
+          <option <?php if($report_type=="Month") { echo "selected=''"; } ?> value="Month"><?php _e('Month', 'graphical-admin-report'); ?></option>
+          <option <?php if($report_type=="Day") { echo "selected=''"; } ?> value="Day"><?php _e('Day', 'graphical-admin-report'); ?></option>
         </select></td>
       <td></td>
 	  <td><select name="record_type" id="report_type">
-          <option <?php if($record_type=="Posts report graph") { echo "selected=''"; } ?> value="Posts report graph">Posts report</option>
-          <option <?php if($record_type=="User registration graph") { echo "selected=''"; } ?> value="User registration graph">User registration</option>
-          <option <?php if($record_type=="Comments report graph") { echo "selected=''"; } ?> value="Comments report graph">Comments report</option>
+          <option <?php if($record_type=="Posts report graph") { echo "selected=''"; } ?> value="Posts report graph"><?php _e('Posts report', 'graphical-admin-report'); ?></option>
+          <option <?php if($record_type=="User registration graph") { echo "selected=''"; } ?> value="User registration graph"><?php _e('User registration', 'graphical-admin-report'); ?></option>
+          <option <?php if($record_type=="Comments report graph") { echo "selected=''"; } ?> value="Comments report graph"><?php _e('Comments report', 'graphical-admin-report'); ?></option>
         </select>
       </td>
 	  <td></td>
@@ -221,11 +220,11 @@ function Greport_admin_options()
 	}
 	else
 	{
-		$Choosen_date_range = "Not selected (or) Not selected properly";
+		$Choosen_date_range = __('Not selected (or) Not selected properly', 'graphical-admin-report');
 	}
-	echo "<i><br><strong>Choosen date range: </strong>" . $Choosen_date_range;
-	echo "<br><strong>Choosen type: </strong>" . $report_type ;
-	echo "<br><strong>Choosen graph type: </strong>" . $record_type ;
+	echo "<i><br><strong>".__('Choosen date range:', 'graphical-admin-report')." </strong>" . $Choosen_date_range;
+	echo "<br><strong>".__('Choosen type:', 'graphical-admin-report')." </strong>" . $report_type ;
+	echo "<br><strong>".__('Choosen graph type:', 'graphical-admin-report')." </strong>" . $record_type ;
 	echo "<br><br></i>";
 	$sSql =	"SELECT";
 	if($report_type == "Day") {
@@ -246,8 +245,6 @@ function Greport_admin_options()
 	if($report_type == "Day") {
 	$sSql =	$sSql . " ,DAY($date_string) desc"; 
 	}
-
-
 
 	//------------------------------Monthly post Summary-----------------------------------------------------
 	//$sSql =	"SELECT MONTH(post_date) as m, YEAR(post_date) as y, COUNT(*) as tot";
@@ -290,7 +287,7 @@ function Greport_admin_options()
 	}
 	else
 	{
-		echo "<div align='center'>At present monthly post summary graph not available.</div>";
+		echo "<div align='center'>".__('At present monthly post summary graph not available.', 'graphical-admin-report')."</div>";
 	}
 	//---------------------------------------------------------------------------------------------------------
 
@@ -298,7 +295,8 @@ function Greport_admin_options()
 	//----------------------------------------------------------------------------------------------------------
 	?>
 	</div>
-	<p class="description">Check official website for more information <a target="_blank" href="http://www.gopiplus.com/work/2010/07/18/graphical-admin-report/">Click here</a></p>
+	<p class="description"><?php _e('Check official website for more information', 'graphical-admin-report'); ?>
+	<a target="_blank" href="http://www.gopiplus.com/work/2010/07/18/graphical-admin-report/"><?php _e('Click here', 'graphical-admin-report'); ?></a></p>
 	</div>
 <?php	
 }
@@ -307,10 +305,18 @@ function Greport_add_to_menu()
 {
 	if (is_admin()) 
 	{
-		add_options_page('Graphical Report', 'Graphical Report', 'manage_options', 'graphical-admin-report', 'Greport_admin_options' );
+		add_options_page(__('Graphical Report', 'graphical-admin-report'),
+							__('Graphical Report', 'graphical-admin-report'), 
+								'manage_options', 'graphical-admin-report', 'Greport_admin_options' );
 	}
 }
 
+function Greport_textdomain() 
+{
+	  load_plugin_textdomain( 'graphical-admin-report', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
+}
+
+add_action('plugins_loaded', 'Greport_textdomain');
 add_action('admin_menu', 'Greport_add_to_menu');
 register_activation_hook(__FILE__, 'Greport_activation');
 register_deactivation_hook( __FILE__, 'Greport_deactivate' );
