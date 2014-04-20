@@ -5,12 +5,12 @@ Author URI: http://www.gopiplus.com/work/2010/07/18/graphical-admin-report/
 Plugin URI: http://www.gopiplus.com/work/2010/07/18/graphical-admin-report/
 Tags: graphical, statistics, report, graph
 Requires at least: 3.4
-Tested up to: 3.8
-Stable tag: 8.2
+Tested up to: 3.9
+Stable tag: 8.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	
-This plug-in will display the graphical report for admin about post count, user registration, comments posted activity.
+This plugin will display the graphical report for admin about post count, user registration, comments posted activity.
 
 == Description ==
 
@@ -34,13 +34,6 @@ To install the Graphical admin report is sufficient to activate the plugin in th
 This is my secong graphical report plugin, to see my another "graphical statistics report" clcik below URL
 
 [graphical statistics report](http://www.gopiplus.com/work/2010/07/18/graphical-admin-report/)	
-
-[Live demo](http://www.gopiplus.com/work/2010/07/18/graphical-admin-report/)	
-[Plugin Site](http://www.gopiplus.com/work/)	
-[More info](http://www.gopiplus.com/work/2010/07/18/graphical-admin-report/)			
-[Comments/Suggestion](http://www.gopiplus.com/work/2010/07/18/graphical-admin-report/)		
-[About author](http://www.gopiplus.com/)		
-
 
 To see the report:
 
@@ -66,16 +59,19 @@ Thanks to fusion Charts team for this SWF graph.
 
 [More info](http://www.gopiplus.com/work/2010/07/18/graphical-admin-report/)	
 
-**How to display this plug-in to front end?**  
+**How to display this plugin to front end?**  
+
 No, this plugin only for admin report.  
 
 == Screenshots ==
 
-1. http://www.gopiplus.com/work/2010/07/18/graphical-admin-report/
-
-2. http://www.gopiplus.com/work/2010/07/18/graphical-admin-report/
+1. Admin Report. http://www.gopiplus.com/work/2010/07/18/graphical-admin-report/
 
 == Upgrade Notice == 
+
+= 8.3 =
+
+1. Tested up to 3.9
 
 = 8.2 =
 
@@ -88,35 +84,48 @@ Plugin *.po file (graphical-admin-report.po) available in the languages folder. 
 Small update in admin layout
 
 = 8.0 =
+
 Tested up to 3.6
 
 = 7.1 =
+
 Tested up to 3.5
 
 = 7.0 =
+
 New demo link, http://www.gopiplus.com
 
 = 6.0 =
+
 Tested up to 3.4.1
 GPLv2 license text added
 
 = 5.0 =
+
 Tested up to 3.4
 
 = 4.0 =
+
 Tested up to 3.3
 
 = 3.0 =
+
 Tested up to 3.2.1
 
 = 2.0 =		
+
 Tested up to 3.0.
 
-= 1.0 =		
+= 1.0 =
+		
 First version.
 
 == Changelog ==
 
+= 8.3 =
+
+1. Tested up to 3.9
+
 = 8.2 =
 
 1. Tested up to 3.8
@@ -128,25 +137,32 @@ Plugin *.po file (graphical-admin-report.po) available in the languages folder. 
 Small update in admin layout
 
 = 8.0 =
+
 Tested up to 3.6
 
 = 7.1 =
+
 Tested up to 3.5
 
 = 7.0 =
+
 New demo link, http://www.gopiplus.com
 
 = 6.0 =
+
 Tested up to 3.4.1
 GPLv2 license text added
 
 = 5.0 =
+
 Tested up to 3.4
 
 = 4.0 =
+
 Tested up to 3.3
 
 = 3.0 =
+
 Tested up to 3.2.1
 
 = 2.0 =

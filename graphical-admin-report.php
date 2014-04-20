@@ -3,10 +3,10 @@
 Plugin Name: Graphical admin report
 Plugin URI: http://www.gopiplus.com/work/2010/07/18/graphical-admin-report/
 Description: This plug-in will display the graphical report for admin about post count, user registration, comments posted activity.
-Version: 8.2
-Author: Gopi.R
+Version: 8.3
+Author: Gopi Ramasamy
 Author URI: http://www.gopiplus.com/work/2010/07/18/graphical-admin-report/
-Donate link: http://www.gopiplus.com/work/2011/05/08/wordpress-plugin-image-horizontal-reel-scroll-slideshow/
+Donate link: http://www.gopiplus.com/work/2010/07/18/graphical-admin-report/
 Tags: Graphical, Report
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
