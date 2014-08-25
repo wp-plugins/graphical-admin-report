@@ -5,8 +5,8 @@ Author URI: http://www.gopiplus.com/work/2010/07/18/graphical-admin-report/
 Plugin URI: http://www.gopiplus.com/work/2010/07/18/graphical-admin-report/
 Tags: graphical, statistics, report, graph
 Requires at least: 3.4
-Tested up to: 3.9
-Stable tag: 8.3
+Tested up to: 4.0
+Stable tag: 8.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	
@@ -21,43 +21,44 @@ Check official website for Live demo [http://www.gopiplus.com/work/2010/07/18/gr
 *   [More info](http://www.gopiplus.com/work/2010/07/18/graphical-admin-report/)			
 *   [Comments/Suggestion](http://www.gopiplus.com/work/2010/07/18/graphical-admin-report/)		
 
-Plug Graphical admin report will display the statistics of your wordpress site on the criteria for registration of users, number of published records and comments of users. The administrator can monitor in graphical form on the intervals - months, days.
+Graphical admin report wordpress plugin is a simple admin based plugin to display the user registration count, post count, comments posted count to admin with graphical representation. Fusion chart has been used to generate the graphical report. This is fully admin based plugin. Just install the plugin and activate and go to plugin dashboard page to see the reports.
 
-To install the Graphical admin report is sufficient to activate the plugin in the administrative panel of wordpress.
+**Features of this plugin**
 
-   1. User registration count graphical report,
-   2. Post count graphical report,
-   3. Comments posted count graphical report
-   4. Search option available to search date range.
-   5. search option available to see the grapth based om month or date.
-	
-This is my secong graphical report plugin, to see my another "graphical statistics report" clcik below URL
-
-[graphical statistics report](http://www.gopiplus.com/work/2010/07/18/graphical-admin-report/)	
-
-To see the report:
-
-1. Activate the plugin.
-2. Go to 'Graphical Report' link under SETTINGS TAB to see the report graph.  
-
-Thanks to fusion Charts team for this SWF graph.
+*   User registration count graphical report.
+*   Post count graphical report.
+*   Comments posted count graphical report.
 
 == Installation ==
 
-**Installation Instruction & Configuration**  
+**Method 1**
 
-*   Unpack the *.zip file and extract the /graphical-admin-report/ folder.    
-*   Drop the 'graphical-statistics-report' folder into your 'wp-content/plugins' folder    
-*   In word press administration panels, click on plug-in from the menu.    
-*   You should see your new 'Graphical admin report' plug-in listed under Inactive plug-in tab.    
-*   To turn the word presses plug-in on, click activate.    
-*   Go to Graphical statistics link under settings to see the report graph.     
+*   Download the plugin graphical-admin-report.zip from [download](http://www.gopiplus.com/work/2010/07/18/graphical-admin-report/ "download") location.
+*   Unpack the graphical-admin-report.zip file
+*   Extract the /graphical-admin-report/ folder.
+*   Drop the graphical-admin-report folder into your wp-content/plugins folder.
+*   In word press administration panels, click on plug-in from the menu.
+*   You should see your new graphical admin report plug-in listed.
+*   To turn the word presses plug-in on, click activate.
+
+**Method 2**
+
+*   Go to Add New menu under Plugins tab in your word-press admin.
+*   Search graphical admin report plugin using search option.
+*   Find the plugin and click Install Now link.
+*   Finally click activate plug-in link to activate the plug-in.
+
+**Method 3**s
+
+*   Download the plugin graphical-admin-report.zip from [download](http://www.gopiplus.com/work/2010/07/18/graphical-admin-report/ "download") location.
+*   Go to Add New menu under Plugins tab in your word-press admin.
+*   Select upload link (top link menu).
+*   Upload the available graphical-admin-report.zip file and click install now.
+*   Finally click activate plug-in link to activate the plug-in.
 
 [More info](http://www.gopiplus.com/work/2010/07/18/graphical-admin-report/)	
 
 == Frequently Asked Questions ==
-
-[More info](http://www.gopiplus.com/work/2010/07/18/graphical-admin-report/)	
 
 **How to display this plugin to front end?**  
 
@@ -68,6 +69,10 @@ No, this plugin only for admin report.
 1. Admin Report. http://www.gopiplus.com/work/2010/07/18/graphical-admin-report/
 
 == Upgrade Notice == 
+
+= 8.4 =
+
+1. Tested up to 4.0
 
 = 8.3 =
 
@@ -121,6 +126,10 @@ Tested up to 3.0.
 First version.
 
 == Changelog ==
+
+= 8.4 =
+
+1. Tested up to 4.0
 
 = 8.3 =
 
