@@ -5,8 +5,8 @@ Author URI: http://www.gopiplus.com/work/2010/07/18/graphical-admin-report/
 Plugin URI: http://www.gopiplus.com/work/2010/07/18/graphical-admin-report/
 Tags: graphical, statistics, report, graph
 Requires at least: 3.4
-Tested up to: 4.3
-Stable tag: 8.7
+Tested up to: 4.3.1
+Stable tag: 8.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	
@@ -28,6 +28,11 @@ Graphical admin report wordpress plugin is a simple admin based plugin to displa
 *   User registration count graphical report.
 *   Post count graphical report.
 *   Comments posted count graphical report.
+
+= Translators =
+
+* English (en_EN) - [Gopi Ramasamy](http://www.gopiplus.com/)
+* Polish (pl_PL) - [Abdul Sattar](https://www.couponmachine.in/)
 
 == Installation ==
 
@@ -69,6 +74,11 @@ No, this plugin only for admin report.
 1. Admin Report. http://www.gopiplus.com/work/2010/07/18/graphical-admin-report/
 
 == Upgrade Notice == 
+
+= 8.8 =
+
+1. Tested up to 4.3.1
+2. Text Domain slug has been added for Language Packs.
 
 = 8.7 =
 
@@ -138,6 +148,11 @@ Tested up to 3.0.
 First version.
 
 == Changelog ==
+
+= 8.8 =
+
+1. Tested up to 4.3.1
+2. Text Domain slug has been added for Language Packs.
 
 = 8.7 =
 

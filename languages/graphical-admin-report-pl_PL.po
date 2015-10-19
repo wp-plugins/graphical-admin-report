@@ -1,85 +1,86 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Graphical admin report\n"
-"POT-Creation-Date: 2015-10-17 22:38+0800\n"
-"PO-Revision-Date: 2015-10-17 22:38+0800\n"
+"POT-Creation-Date: 2015-10-17 22:39+0800\n"
+"PO-Revision-Date: 2015-10-17 22:39+0800\n"
 "Last-Translator: \n"
-"Language-Team: www.gopiplus.com <www.gopiplus.com>\n"
+"Language-Team: www.gopiplus.com\n"
+"Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.5.7\n"
-"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
 "X-Poedit-Basepath: .\n"
+"X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-SearchPath-0: ..\n"
 
 #: ../graphical-admin-report.php:74 ../graphical-admin-report.php:308
 #: ../graphical-admin-report.php:309
 msgid "Graphical Report"
-msgstr ""
+msgstr "Graficzny Zgłoś"
 
 #: ../graphical-admin-report.php:88
 msgid "Choose date range"
-msgstr ""
+msgstr "Data rozpoczęcia"
 
 #: ../graphical-admin-report.php:90
 msgid "Choose type"
-msgstr ""
+msgstr "Wybierz typ gry"
 
 #: ../graphical-admin-report.php:92
 msgid "Choose graph type"
-msgstr ""
+msgstr "Wybierz wykres typu"
 
 #: ../graphical-admin-report.php:98 ../graphical-admin-report.php:138
 #: ../graphical-admin-report.php:177
 msgid "Month"
-msgstr ""
+msgstr "Miesiąc"
 
 #: ../graphical-admin-report.php:113 ../graphical-admin-report.php:153
 #: ../graphical-admin-report.php:178
 msgid "Day"
-msgstr ""
+msgstr "Dzień"
 
 #: ../graphical-admin-report.php:126 ../graphical-admin-report.php:164
 msgid "Year"
-msgstr ""
+msgstr "Rok"
 
 #: ../graphical-admin-report.php:182
 msgid "Posts report"
-msgstr ""
+msgstr "Posty Zgłoś"
 
 #: ../graphical-admin-report.php:183
 msgid "User registration"
-msgstr ""
+msgstr "Rejestracja Użytkownika"
 
 #: ../graphical-admin-report.php:184
 msgid "Comments report"
-msgstr ""
+msgstr "Najnowsze Tytuł zakładka komentarze:"
 
 #: ../graphical-admin-report.php:223
 msgid "Not selected (or) Not selected properly"
-msgstr ""
+msgstr "Nie wybrano (lub) nie odpowiednio dobrane"
 
 #: ../graphical-admin-report.php:225
 msgid "Choosen date range:"
-msgstr ""
+msgstr "Wybrane zakres dat:"
 
 #: ../graphical-admin-report.php:226
 msgid "Choosen type:"
-msgstr ""
+msgstr "Typ Wybrany:"
 
 #: ../graphical-admin-report.php:227
 msgid "Choosen graph type:"
-msgstr ""
+msgstr "Wybrany typ wykresu:"
 
 #: ../graphical-admin-report.php:290
 msgid "At present monthly post summary graph not available."
-msgstr ""
+msgstr "Obecnie miesięcznym wykresie podsumowania post nie jest dostępna."
 
 #: ../graphical-admin-report.php:298
 msgid "Check official website for more information"
-msgstr ""
+msgstr "Sprawdzić oficjalną stronę internetową, aby uzyskać więcej informacji"
 
 #: ../graphical-admin-report.php:299
 msgid "Click here"
-msgstr ""
+msgstr "Kliknij tutaj"
